@@ -24,3 +24,57 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.board__container {
+  display: flex;
+  gap: 25px;
+}
+.board__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 50px;
+}
+.board {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+.cell {
+  border: 1px solid green;
+}
+.active-shoot {
+  outline: 3px solid greenyellow;
+}
+.grey {
+  background-color: #ccc;
+}
+.blue {
+  color: blue;
+  font-size: 30px;
+  vertical-align: middle;
+  font-weight: bolder;
+}
+.red {
+  color: red;
+  background-color: #ccc;
+}
+
+.btn-ready,
+.btn-gen {
+  background-color: blueviolet;
+  color: aliceblue;
+  outline: none;
+  border: none;
+  height: 30px;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+
+.btn-gen {
+  background-color: limegreen;
+}
